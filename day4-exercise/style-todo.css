@@ -1,0 +1,18 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#list-container {
+    padding: 20px;
+}
+#list-container ul {
+    list-style: none;
+}
+.completed {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}

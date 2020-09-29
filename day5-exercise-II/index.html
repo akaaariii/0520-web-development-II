@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>Document</title>
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- modally css -->
+    <link rel="stylesheet" href="styles/jquery.modally.css">
+    <link rel="stylesheet" href="styles/jquery.css">
+</head>
+<body>
+    <header>
+        <h1>Bali Tourism <i class="fas fa-suitcase-rolling"></i></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Attractions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="l-section s-first">
+            <div class="title">
+                <div class="line"></div>
+                <h2>Things to Do</h2>
+                <div class="line"></div>
+            </div>
+            <div class="center">
+                <div><img src="images/bali-01.jpg" alt=""></div>
+                <div><img src="images/bali-02.jpg" alt=""></div>
+                <div><img src="images/bali-03.jpg" alt=""></div>
+                <div><img src="images/bali-04.jpg" alt=""></div>
+                <div><img src="images/bali-05.jpg" alt=""></div>
+                <div><img src="images/bali-06.jpg" alt=""></div>
+            </div>
+        </section>
+        <section class="l-section s-second">
+            <div class="title">
+                <div class="line"></div>
+                <h2>About Bali</h2>
+                <div class="line"></div>
+                <div class="content-text">
+                    <p>
+                        Vestibulum augue lectus, aliquam tincidunt accumsan a, <span class="marker-animation">iaculis nec tellus. Quisque non interdum turpis</span>. Nunc interdum, nibh non laoreet egestas, urna odio lobortis ex, sit amet dignissim nunc nulla at lectus. Morbi a maximus erat. Fusce fermentum ornare faucibus. In lorem lectus, rhoncus vel arcu id, aliquam dignissim nibh. Nulla vestibulum, metus quis finibus tincidunt, metus purus congue odio, quis pretium orci lectus eget massa. Vivamus eu nibh risus. Proin aliquet maximus hendrerit. <span class="marker-animation">Donec tristique ex velit, non consequat ligula feugiat nec</span>. Aenean lacinia sit amet augue vitae vehicula. Ut quis mauris varius, molestie eros convallis, vulputate leo. Nam enim augue, maximus id ante ut, rutrum gravida orci. Duis tincidunt pretium venenatis.
+                    </p>
+                    <p>
+                        Vestibulum augue lectus, aliquam tincidunt accumsan a, <span class="marker-animation">iaculis nec tellus. Quisque non interdum turpis</span>. Nunc interdum, nibh non laoreet egestas, urna odio lobortis ex, sit amet dignissim nunc nulla at lectus. Morbi a maximus erat. Fusce fermentum ornare faucibus. In lorem lectus, rhoncus vel arcu id, aliquam dignissim nibh. Nulla vestibulum, metus quis finibus tincidunt, metus purus congue odio, quis pretium orci lectus eget massa. <span class="marker-animation">Vivamus eu nibh risus. Proin aliquet maximus hendrerit. Donec tristique ex velit, non consequat ligula feugiat nec.</span> Aenean lacinia sit amet augue vitae vehicula. Ut quis mauris varius, molestie eros convallis, vulputate leo. Nam enim augue, maximus id ante ut, rutrum gravida orci. Duis tincidunt pretium venenatis.
+                    </p>
+                    <p>
+                        Vestibulum augue lectus, aliquam tincidunt accumsan a, iaculis nec tellus. Quisque non interdum turpis. Nunc interdum, nibh non laoreet egestas, urna odio lobortis ex, sit amet dignissim nunc nulla at lectus. Morbi a maximus erat. Fusce fermentum ornare faucibus. In lorem lectus, rhoncus vel arcu id, aliquam dignissim nibh. Nulla vestibulum, <span class="marker-animation">metus quis finibus tincidunt, metus purus congue odio, quis pretium orci lectus eget massa. Vivamus eu nibh risus</span>. Proin aliquet maximus hendrerit. Donec tristique ex velit, non consequat ligula feugiat nec. Aenean lacinia sit amet augue vitae vehicula. Ut quis mauris varius, molestie eros convallis, vulputate leo. Nam enim augue, maximus id ante ut, rutrum gravida orci. Duis tincidunt pretium venenatis.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="l-section s-modally">
+            <h2>Show More &nbsp; <a href="#lorem" target="_modal" class="button">Try me!</a></h2>
+            <div id="lorem" style="display:none" class="modally-init" modally-max-width="1000">
+                <h1 class="modal-title">Hey there!</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Yes I am this lazy.</p>
+                <div class="button-wrap">
+                    <a target="_modal:close" class="button small">Close me!</a><a href="#ipsum" target="_modal" class="button gradient small">Check next one!</a>
+                </div>
+            </div>
+            <div id="ipsum" style="display:none">
+                <h1 class="modal-title">Have you decided where to go?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Yes I am this lazy.</p>
+                <div class="button-wrap">
+                    <a class="button small modally-close">Close me!</a><a href="#dolor" target="_modal:open" class="button gradient small">No? Click here!</a>
+                </div>
+            </div>
+            <div id="dolor" style="display:none" modally-max-width="500">
+                <h1 class="modal-title">Let's go to Bali!</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Yes I am this lazy.</p>
+                <div class="button-wrap">
+                    <a href="#dolor" target="_modal:close" class="button gradient small">Close me!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2020 &copy; Akari Tsutsui<br>For Educational Use Only</p>
+            
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- marker animation js -->
+    <script src="scripts/marker-animation.js"></script>
+    <!-- modally js -->
+    <script src="scripts/jquery.modally.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

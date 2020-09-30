@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Employee Management System</title>
+    <style>
+        th, td {
+            text-align: center;
+            font-size: .8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-5">
+        <h2 class="text-center pb-3">Employee Management System</h2>
+        <div>
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="fName">First name</label>
+                        <input type="text" class="form-control" id="fName" placeholder="First name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lName">Last name</label>
+                        <input type="text" class="form-control" id="lName" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="joined-date">Joined Date</label>
+                        <input type="date" class="form-control" id="joined-date">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-3">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="col-3">
+                        <label for="zip">Zip</label>
+                        <input type="text" class="form-control" id="zip">
+                    </div>
+                    <div class="col-4">
+                        <label for="availability">Availability (multiple)</label>
+                        <select name="days[]" class="custom-select" id="availability" multiple>
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select>
+                    </div>
+                    <div class="col-2 p-4 my-2">
+                        <button type="submit" id="btn-submit" class="btn btn-info mb-2">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="p-2">
+                <button type="submit" id="btn-show" class="btn btn-info mb-2">Show List</button>
+            </div>
+        </div>
+        <div class="list w-75 my-4">
+
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

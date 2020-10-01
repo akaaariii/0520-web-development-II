@@ -101,7 +101,7 @@ submitBtn.addEventListener('click', e => {
     const avail = getSelectedOptions();
 
     let n1 = new Date().getTime();
-    let n2 = (parseInt(Math.random() * 21)).toString();
+    let n2 = parseInt(Math.random() * 21);
     let idNum = `${n1}${n2}`;
 
     let newEmployee = {

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/easySelectStyle.css">
+    <link rel="stylesheet" href="styles/validation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/easySelect.js"></script>
+    <script src="scripts/employee-script.js"></script>
+    <title>Employee Management</title>
+    <style>
+        thead {
+            border-bottom: 1px solid #939090;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+            font-size: .8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Employee Management</a>
+        </nav>
+        <div class="card m-3">
+            <form class="card-body">
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="fname-input">first name</label>
+                        <input type="text" class="form-control" id="fname-input" placeholder="first name">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-group col">
+                        <label for="lname-input">last name</label>
+                        <input type="text" class="form-control" id="lname-input" placeholder="last name">
+                        <small>Error Message</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="email-input">Email</label>
+                        <input type="text" class="form-control" id="email-input" placeholder="email">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-group col">
+                        <label for="joind-date">Joined Date</label>
+                        <input type="date" class="form-control" id="joined-date">
+                        <small>Error Message</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="city-input">City</label>
+                        <input type="text" class="form-control" id="city-input" placeholder="city">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-group col">
+                        <label for="pcode-input">Postal Code</label>
+                        <input type="text" class="form-control" id="pcode-input" placeholder="A1A 1A1">
+                        <small>Error Message</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="my-select">Availabilities</label>
+                        <select multiple class="form-control" id="my-select">
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select>
+                        <small>Error Message</small>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-info px-4" id="btn-submit">Add</button>
+            </form>
+        </div>
+        <div class="mx-3"><button class="btn btn-outline-info px-4" id="btn-show">Show</button></div>
+        <div id="table" class="m-3"></div>
+    </div>
+</body>
+</html>

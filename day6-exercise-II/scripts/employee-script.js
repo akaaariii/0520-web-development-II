@@ -115,7 +115,8 @@ onload = function() {
         validDate : 'joined date is not valid',
         requiredCity : 'city name is required',
         requiredPcode : 'postal code is required',
-        validPcode : 'postal code is not valid'
+        validPcode : 'postal code is not valid',
+        requiredAvailability: 'availability is required'
     }
 
     const emailformat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -162,6 +163,13 @@ onload = function() {
             setErrorForm(postalCode, ERROR_MESSAGES.validPcode);
         } else {
             setSuccessForm(postalCode);
+        }
+
+        // availability
+        if(availability.value.length === 0){
+            setErrorForm(availability.parentElement, ERROR_MESSAGES.requiredAvailability);
+        } else {
+            setSuccessForm(availability);
         }
     }
 
